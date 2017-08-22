@@ -1,0 +1,38 @@
+[
+    {
+        "id": 22,
+        "title":"W pustyni i w puszczy",
+        "author": "Sienkiewicz Henryk"
+    },
+    {
+        "id": 33,
+        "title": "Pan Tadeusz",
+        "author": "Mickiewicz Adam"
+    },
+    {
+        "id": 44,
+        "title": "Chłopi",
+        "author": "Reymont Władysław"
+    },
+    {
+        "id": 55,
+        "title": "Dżuma",
+        "author": "Camus Albert"
+    },
+    {
+        "id": 57,
+        "title": "Lesio",
+        "author": "Chmielewska Joanna"
+    },
+    {
+        "id": 65,
+        "title": "Balladyna",
+        "author": "Słowacki Juliusz"
+    },
+    {
+        "id": 75,
+        "title": "Odprawa posłów greckich",
+        "author": "Kochanowski Jan"
+    }
+
+]
