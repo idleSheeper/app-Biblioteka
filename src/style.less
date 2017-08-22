@@ -1,0 +1,138 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+    background-color: #E4F0D0; 
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #7098B2;
+    margin: 0;
+    line-height: 4em;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+
+    .row {
+        width: 100%;
+        margin:0;
+        padding:0;
+        background-color: #FFFCF7;
+        border: none;
+        display: flex;
+        
+        .col  {
+            padding: 1em 3%;
+            line-height: 2em;
+            flex: 1 0 32%;
+            box-sizing: border-box;
+        }
+        
+        .col-action {
+            text-align: center;
+        }
+
+        .col a {
+            margin: 5px auto;
+            padding: 0 10px;
+            text-decoration: none;
+        } 
+
+        a:hover {
+            cursor: pointer !important;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    }
+
+    .row:nth-child(odd) {
+        background-color: #C2D8B9;
+    }
+
+    .header{
+        font-weight: bold;
+        border-bottom: 3px solid black;
+        line-height: 3em;
+        background-color: #83B270 !important;
+        text-align: left;
+    }
+}
+
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+
+.panel-edition {
+    max-width: 320px;
+    margin: auto;
+    
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        padding: 8px;
+    }
+    
+    input {
+        display: block;
+        padding: 12px 3%;
+        margin: 8px auto;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background-color: #4CAF4F;
+        color: white;
+        padding: 14px 3%;
+        margin: 15px auto;
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container {       
+         .row {
+            display: block;
+            padding: 3% 0;
+            .col {
+                display: inline-block;
+                width: 78%;
+                padding: 0 3%;
+            }
+            .col-action {
+                width: 100%;
+                padding-top: 2%;
+            }
+
+            .hidden {
+                display: inline-block;
+                width: 20%;
+                font-weight: bold;
+            }
+        }
+        .header {
+             display: none;
+        }
+    }
+}
