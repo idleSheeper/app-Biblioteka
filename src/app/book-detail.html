@@ -1,0 +1,13 @@
+ <div *ngIf="book" class="panel-edition">
+    <h2>Edytuj poniższą książkę:</h2>
+    
+    <div >
+      <label>Tytuł: </label>
+      <input [(ngModel)]="book.title" placeholder="title" />
+      <label>Autor: </label>
+      <input [(ngModel)]="book.author" placeholder="author" />
+    </div>
+    <button (click)="goBack()">Powrót</button>  
+  </div>
+
+

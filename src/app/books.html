@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row header">
+        <div class="col">Tytuł</div>
+        <div class="col">Autor</div>
+        <div class="col"></div>
+    </div>
+    <div class="row" *ngFor="let book of books">
+        <div class="col hidden">Tytuł:</div>
+        <div class="col">{{ book.title }}</div>
+        <div class="col hidden">Autor:</div>
+        <div class="col">{{ book.author }}</div>
+        <div class="col col-action"><a (click)="deleteBook(book.id)" class="red">Usuń</a>  
+            <a [routerLink]="['/detail', book.id]" (click)="selectBook(book)" class="blue">Edytuj</a></div>
+    </div>
+</div>
+
+
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th></th>
+        </tr>  
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td data-th="Tytuł:">{{book.title}}</td>  
+            <td data-th="Autor:">{{book.author}}</td>  
+            <td><a (click)="deleteBook(book.id)" class="red">Usuń</a>   |  
+                <a [routerLink]="['/detail', book.id]" (click)="selectBook(book)" class="blue">Edytuj</a></td>   
+        <tr>      
+    </tbody>
+</table>  -->
+
+<!-- 
+<ul *ngFor="let book of books"> 
+    <li> 
+        {{book.title}} <button (click)="deleteBook(book.id)">usun</button>
+        <a [routerLink]="['/detail', book.id]" (click)="selectBook(book)">edytuj</a>
+    </li>
+</ul>  -->
